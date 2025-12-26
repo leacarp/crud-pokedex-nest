@@ -1,0 +1,9 @@
+html, body {
+    padding: 10px;
+    background-color: darkgrey;
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+}
