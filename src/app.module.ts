@@ -19,9 +19,9 @@ import { EnvConfiguration } from './config/env.config';
       rootPath: join(__dirname, '..', 'public'),
     }),
 
-    MongooseModule.forRoot(process.env.MONGODB!, {
+    MongooseModule.forRoot(process.env.MONGODB || '', {
       dbName: 'pokemonsDb',
-    }), // con el ! le decimos a typescript que no es undefined o any
+    }),
 
     PokemonModule,
 
